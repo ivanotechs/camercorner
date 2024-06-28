@@ -1,1 +1,1 @@
-<img src="{{asset('images/logo-clair-1.svg')}}" width="">
+<img src="{{asset('images/cc-logo-dark.png')}}" width="200px">

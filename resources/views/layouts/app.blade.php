@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Styles -->
-    <title>@yield('title') | BorderlessRx</title>
-    <link rel="shortcut icon" href="{{asset('images')}}/small-logo.png">
+    <title>@yield('title') | CamerCorner</title>
+    <link rel="shortcut icon" href="{{asset('images')}}/ccl.png">
     @yield('more-meta')
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <link href="{{ asset('be_assets') }}/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
@@ -348,7 +349,7 @@
                             <x-logo.white></x-logo.white>
                         </a>
                         <p class="text-base mt-4 font-normal   mb-7">
-                            At Borderless, we understand the importance of timely and reliable healthcare advice. That's why we've created a seamless platform where you can easily access professional guidance from licensed pharmacists from the comfort of your home.
+                            At CamerCorner, we understand the importance of timely and reliable good ordering and delivery. That's why we've created a seamless platform where you can easily access your favorite stores from the comfort of your home
 
                         </p>
                     </div>
@@ -362,7 +363,7 @@
                             <li>
                                 <a href="{{route('shop.index')}}"
                                     class="inline-block text-base leading-loose  hover:text-secondary-500 ">
-                                    Shop Healthcare Gadgets & Equipment
+                                    Shop
                                 </a>
                             </li>
                             <li>
@@ -401,37 +402,19 @@
                             <li>
                                 <a href="{{route('web.how_can_we_help')}}"
                                     class="inline-block text-base leading-loose  hover:text-secondary-500 ">
-                                    Home Consultation
+                                    Home Delivary
                                 </a>
                             </li>
                             <li>
                                 <a href="{{route('web.service-detail', ['id' => 8])}}"
                                     class="inline-block text-base leading-loose  hover:text-secondary-500 ">
-                                    Medication Dispensing & Delivery
+                                    Become an Agent
                                 </a>
                             </li>
                             <li>
                                 <a href="{{route('web.service-detail', ['id' => 6])}}"
                                     class="inline-block text-base leading-loose  hover:text-secondary-500 ">
-                                    Online Consultation
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{route('web.service-detail', ['id' => 9])}}"
-                                    class="inline-block text-base leading-loose  hover:text-secondary-500 ">
-                                    Medication Monitoring & Adherence
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{route('web.service-detail', ['id' => 10])}}"
-                                    class="inline-block text-base leading-loose  hover:text-secondary-500 ">
-                                    Health Education Workshop
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{route('web.service-detail', ['id' => 11])}}"
-                                    class="inline-block text-base leading-loose  hover:text-secondary-500 ">
-                                    Rewards Program Referreals
+                                    become a seller
                                 </a>
                             </li>
                         </ul>
@@ -446,14 +429,14 @@
                             <li>
                                 <a href=""
                                     class="inline-block text-base leading-loose  hover:text-secondary-500 ">
-                                    Mariton street 256,
-                                    British Columbia, Canada
+                                    Buea, Molyko Dirthy South,
+                                    Ivanotechs Enterprices
                                 </a>
                             </li>
                             <li>
                                 <a href="{{route('web.contact_us')}}"
                                     class="inline-block text-base leading-loose  hover:text-secondary-500 ">
-                                    + 1 6 49085303
+                                    +237 670011942
                                 </a>
                             </li>
                             <li class="">
@@ -487,7 +470,7 @@
     <!-- ====== Footer Section End -->
     <div class=" py-4 text-[#C7C7C7] bg-footer border-t-[0.5px] border-t-light">
         <x-container class="mx-auto flex items-center justify-center w-full max-w-screen-xl">
-            <span class="text-sm  ">All rights reserves © 2024. BorderlessRX
+            <span class="text-sm  ">All rights reserves © 2024. CamerCorner
             </span>
         </x-container>
 
