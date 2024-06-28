@@ -1,0 +1,33 @@
+#!/bin/bash
+
+echo "updating git"
+git pull origin
+
+#echo "copying env file"
+#sudo cp .env.dev .env
+
+echo "updating composer"
+composer install
+
+echo "dumping autoload"
+composer dump-autoload
+
+echo "running migrations"
+php artisan migrate
+
+php artisan view:clear
+php artisan route:clear
+php artisan config:clear
+sudo -u www-data php artisan cache:clear
+php artisan storage:link
+
+# echo "Restarting laravel queues"
+# sudo supervisorctl restart laravel_queue
+
+echo "Generating assets"
+npm install
+npm run production
+
+echo "successful deployment"
+exit 0
+

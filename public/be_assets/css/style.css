@@ -1,0 +1,138 @@
+.btn-primary {
+    background-color: hsl(89, 58%, 43%);
+    border-color: #70AF2E;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+    background-color: #4E7525;
+    border-color: #4E7525;
+}
+
+.pagination svg {
+    width: 20px;
+}
+
+.pagination nav>div:first-of-type {
+    display: none;
+}
+
+.loading {
+    opacity: 70% !important;
+}
+
+.badge-draft {
+    background-color: #5a5a5a;
+}
+
+.badge-processing {
+    background-color: #be8b0a;
+}
+
+.badge-pending {
+    background-color: #be8b0a;
+}
+
+.badge-completed {
+    background-color: #3c66b8;
+}
+
+.badge-declined {
+    background-color: #db2323;
+}
+
+.badge-accepted {
+    background-color: #368634;
+}
+
+.badge-reviewed {
+    background-color: #0a53be;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #70AF2E !important;
+    font-weight: 600;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.nav-tabs .nav-link {
+    font-weight: 600;
+}
+
+label>em {
+    color: #db2323;
+}
+
+body {
+    background-color: #70AF2E !important;
+}
+
+.navbar-custom {
+    padding: 0 10px 0 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    z-index: 100;
+    color: whitesmoke !important;
+    background: #70AF2E !important;
+}
+
+.content-page {
+    margin-left: 240px;
+    border-left: 7px solid #70AF2E !important;
+}
+
+.navbar-custom .topnav-menu .nav-link {
+    color: white !important;
+
+}
+
+.p-0 {
+    padding: 0px;
+}
+
+.navbar-custom .button-menu-mobile {
+    border: none;
+    color: white !important;
+    cursor: pointer;
+}
+
+.auth-card {
+    background-color: #003614;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 36px;
+    padding-left: 12px;
+    color: #38393b;
+}
+
+.select2-result-tag {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.select2-result-tag__avatar {
+    width: 3rem;
+}
+
+.select2-result-tag__avatar img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.select2-result-tag__description {
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+.form-control::placeholder {
+    color: #9CA3AF;
+}
