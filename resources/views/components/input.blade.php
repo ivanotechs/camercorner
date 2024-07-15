@@ -1,3 +1,3 @@
 <input {{ $attributes->merge([
-    'class' => 'p-4 focus:border-secondary-500 focus: focus:ring-0 border  bg-transparent',
+    'class' => 'p-4 focus:border-primary  focus:ring-0 border border-dark-300  bg-transparent w-full',
     ]) }} >

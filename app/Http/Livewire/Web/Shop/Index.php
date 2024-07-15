@@ -17,11 +17,12 @@ class Index extends Component
 
     public function mount()
     {
-        $this->products=Product::all();
+        
     }
 
     public function render()
     {
+        $this->products=Product::all();
         return view('livewire.web.shop.index',[
             'products'=>$this->products,
         ]);

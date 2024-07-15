@@ -16,7 +16,7 @@
                                         <x-button.transparent>
                                             Buy Something <i class="fa fa-cart-plus ml-4"  aria-hidden="true"></i>
                                         </x-button.transparent>
-                                        <x-button.primary class="bg-secondary-500 ml-4 text-white text-base font-normal justify-center items-center p-4">
+                                        <x-button.primary href="{{route('shop.index')}}" class="bg-secondary-500 ml-4 text-white text-base font-normal justify-center items-center p-4">
                                             Sell Something<i class="fa fa-chevron-right"></i>
                                         </x-button.primary>
                                     </div>

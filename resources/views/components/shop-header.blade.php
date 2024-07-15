@@ -8,11 +8,11 @@
                             Subscribe to our 
                         </p>
                         <p class="text-4xl font-semibold text-secondary-500 mt-1">
-                            BordelessRX Health Pack
+                            CamerCorner Seller Pack
                         </p>
-                        <p class="text-base font-bold mb-8 mt-1">Get free health services including booking unlimited appointments with a pharmacist by subscribing to our BorderlessRX health pack.</p>
+                        <p class="text-base font-bold mb-8 mt-1">This account gives you the possibility to sell on our application. You can sell either your own goods or you can sell in dropshipping other peoples goods for profit only</p>
                         <p class="text-xl font-bold mb-4">
-                            $100 CAD/ for 1 year
+                            1000 FCFA/ for 1 month
                         </p>
                         <div class="flex gap-4">
                             <x-button.secondary>View Details</x-button.secondary>

@@ -1,6 +1,6 @@
 .btn-primary {
-    background-color: hsl(89, 58%, 43%);
-    border-color: #70AF2E;
+    background-color: #FF5E14;
+    border-color: #FF5E14;
 }
 
 .btn-primary:hover,
@@ -8,8 +8,8 @@
 .btn-primary:active,
 .btn-primary.active,
 .open>.dropdown-toggle.btn-primary {
-    background-color: #4E7525;
-    border-color: #4E7525;
+    background-color: #e97a47;
+    border-color: #e97a47;
 }
 
 .pagination svg {
@@ -54,7 +54,7 @@
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-    color: #70AF2E !important;
+    color: #FF5E14 !important;
     font-weight: 600;
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff;
@@ -69,7 +69,7 @@ label>em {
 }
 
 body {
-    background-color: #70AF2E !important;
+    background-color: #FF5E14 !important;
 }
 
 .navbar-custom {
@@ -79,12 +79,11 @@ body {
     height: 70px;
     z-index: 100;
     color: whitesmoke !important;
-    background: #70AF2E !important;
+    background: #FF5E14 !important;
 }
 
 .content-page {
     margin-left: 240px;
-    border-left: 7px solid #70AF2E !important;
 }
 
 .navbar-custom .topnav-menu .nav-link {

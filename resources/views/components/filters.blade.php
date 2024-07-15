@@ -17,7 +17,7 @@
 
                 @for ($i = 0; $i < 8; $i++)
                     <div class="flex gap-4 items-center text-dark-400 mb-2">
-                        <x-button.checkbox style="color: #70AF2E"/>
+                        <x-button.checkbox style="color: #FF5E14"/>
                         <p class="text-base font-normal">Baby & Kids</p>
                     </div> 
                 @endfor

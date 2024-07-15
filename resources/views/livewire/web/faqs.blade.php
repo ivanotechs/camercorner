@@ -17,7 +17,7 @@
                         <div 
                 class="p-2 lg:p-4 lg:py-12 bg-secondary-50 border-b hover:text-white hover:bg-secondary-500 text-dark-400 cursor-pointer"
                 wire:click="setActiveCategory({{ $category->id }})"
-                @if($activeCategory === $category->id) style="background-color: #70AF2E; color: #fff;" @endif
+                @if($activeCategory === $category->id) style="background-color: #FF5E14; color: #fff;" @endif
             >
                 <p class="font-bold text-base">{{ $category->name }}</p>
             </div>

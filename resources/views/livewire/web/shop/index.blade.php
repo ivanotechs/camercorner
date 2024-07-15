@@ -38,26 +38,30 @@
             </div>
             <div class=" col-span-2 {{!$showFilters? 'lg:col-span-3 ' : ' lg:col-span-2'}}}}">
                 <div class="grid grid-cols-3 md:grid-cols-4 gap-4 {{$showFilters? 'lg:grid-cols-2' : 'lg:grid-cols-3'}}">
-                    @if($products->isNotEmpty())
+                    @if($products?->isNotEmpty())
                     @foreach ($products as $product)
                         <div class="col-span-3 md:col-span-2 lg:col-span-1">
                             <a href="{{route('shop.detail', 1)}}">
                                 <div class="h-full w-full rounded-2xl shadow-lg shadow-green-shadow group hover:ease-out hover:duration-75 hover:-translate-x-1 hover:-translate-y-1">
                                     <div class="p-8 py-12 bg-white flex h-1/2 justify-center items-center">
                                         @if($product->image)
-                                        <img src="{{$product->image}}" alt="" class="w-full">
+                                        <img src="{{filter_var($product->image, FILTER_VALIDATE_URL)? $product->image : 'storage/'.$product->image}}" alt="" class="w-full">
                                         @else
                                         <img src="{{asset('images/Rectangle 9.png')}}" alt="">
                                         @endif
                                     </div>
                                     <div class="p-4 py-6 bg-secondary-100 h-1/2 ">
                                         <div>
-                                            <div class="">
-                                                <p class="font-normal text-[13px] text-secondary-2 group-hover:text-secondary-900">{{$product->name}}</p>
+                                            <div class="mb-2">
+                                                <div class="flex justify-between">
+                                                    <p class="font-normal text-[13px] text-secondary-2 group-hover:text-secondary-900">{{$product->name}}</p>
+                                                    <p class="text-base font-bold text-secondary-2 mb-6 group-hover:text-secondary-900">XAF {{$product->price}}</p>
+                                                </div>
                                                 <p class="text-base font-bold text-secondary-900 mb-6 group-hover:text-secondary-2">{{$product->description}}</p>
+                                                <p class="font-normal text-[13px] text-secondary-2 group-hover:text-secondary-900 italic">{{'By Viterra Shop'}}</p>
                                             </div>
 
-                                            <div class="flex  w-full">
+                                            <div class="flex gap-4 w-full">
                                                 <x-button.transparent>
                                                     Add to Cart <i class="fa fa-cart-plus ml-4"  aria-hidden="true"></i>
                                                 </x-button.transparent>

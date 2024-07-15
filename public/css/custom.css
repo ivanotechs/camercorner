@@ -11,10 +11,10 @@ body{
   }
 
   .bg-primary{
-    background-color: #70AF2E;
+    background-color: #FF5E14;
   }
   .text-primary{
-    color: #70AF2E;
+    color: #FF5E14;
   }
   .bg-primary-contact-3{
     background-color: rgba(112, 175, 46, 0.95);
@@ -245,11 +245,11 @@ input {
 .inactive-faq{
   height: 136px;
   background-color: #F4FFF3;
-  /* background-color: #70AF2E; */
+  /* background-color: #FF5E14; */
 }
 .active-faq{
   height: 136px;
-  background-color: #70AF2E;
+  background-color: #FF5E14;
   color: white;
 }
 .h6U{
@@ -291,7 +291,7 @@ input {
   font-weight: 400;
 }
 .small{
-  color: #70AF2E;
+  color: #FF5E14;
   font-size: 13px;
   font-weight: 400;
 }

@@ -91,7 +91,7 @@
 <body>
 
     <!-- Begin page -->
-    <div id="wrapper">
+    <div id="wrapper w-1000">
 
 
         <!-- Topbar Start -->
@@ -124,12 +124,12 @@
                 <a href="{{ route('admin.home') }}" class="logo text-center logo-dark">
                     <span class="logo-lg">
 
-                        <span><x-logo.dark /></span>
+                        <span><x-logo.white /></span>
                         <!-- <span class="logo-lg-text-dark">Simple</span> -->
                     </span>
                     <span class="logo-sm">
                         <!-- <span class="logo-lg-text-dark">S</span> -->
-                        <x-logo.dark />
+                        <x-logo.small />
 
                     </span>
                 </a>
@@ -137,13 +137,13 @@
                 <a href="{{ route('admin.home') }}" class="logo text-center logo-light">
                     <span class="logo-lg">
 
-                        <span><x-logo.dark /></span>
+                        <span><x-logo.white /></span>
 
                         <!-- <span class="logo-lg-text-light">Simple</span> -->
                     </span>
                     <span class="logo-sm">
                         <!-- <span class="logo-lg-text-light">S</span> -->
-                        <x-logo.dark />
+                        <x-logo.small />
 
                     </span>
                 </a>
@@ -166,9 +166,9 @@
                     <img src="{{ asset('be_assets') }}/images/users/avatar-1.jpg" alt=""
                         class="avatar-md rounded-circle">
                 </div>
-                <div class="user-info">
-                    <a href="#">Admin</a>
-                    <p class="text-muted m-0">Administrator</p>
+                <div class="user-info ">
+                    <a href="#" class="text-white">Admin</a>
+                    <p class=" text-white m-0">Administrator</p>
                 </div>
             </div>
 
@@ -237,10 +237,10 @@
         <!-- ============================================================== -->
 
         <div class="content-page">
-            <div class="content">
+            <div class="content bg-white">
 
                 <!-- Start container-fluid -->
-                <div class="container-fluid">
+                <div class="container-fluid ">
                     @yield('content')
                     {{ $slot ?? '' }}
                 </div>

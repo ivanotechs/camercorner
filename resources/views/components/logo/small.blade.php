@@ -1,1 +1,1 @@
-<img src="{{asset('images/ccl.png')}}" width="120">
+<img src="{{asset('images/ccl.png')}}" width="40px">

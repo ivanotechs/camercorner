@@ -49,74 +49,7 @@
                                     class=" flex h-full items-center  py-5  px-4  hover:text-secondary-500 {{ Route::is('web.home') ? 'text-secondary-500' : '' }}">Home
                                 </a>
                             </li>
-                            <li class=" border-b-4 border-transparent  ">
-                                <x-dropdown width="w-72 shadow-lg" position="absolute">
-                                    <x-slot name="trigger">
-                                        <div
-                                            class="flex py-5 px-4 cursor-pointer hover:text-secondary-500  justify-between items-center">
-                                            <span
-                                                class="mr-2 hover:text-secondary-500 {{ Route::is('about.*') || Route::is('about') ? 'text-secondary-500' : '' }}">
-                                                How Can I Help</span> <p class="text-xl -mt-1">+</p>
-                                        </div>
-                                    </x-slot>
-                                    <x-slot name="content" class="bg-white">
-                                        <ul class="py-2 px-4 text-sm bg-white " aria-labelledby="dropdownLargeButton">
-                                            <li class=" py-4  ">
-                                                <div class="grid grid-row">
-                                                    <a href="{{route('web.service-detail', ['id' => 6])}}"
-                                                    class="hover:text-secondary-500 {{ Route::is('about') ? 'text-secondary-500' : '' }}">Online Consultation</a>
-                                                </div>
 
-                                            </li>
-                                            <li class=" py-4 ">
-                                                <div class="grid grid-row">
-                                                    <a
-                                                href="{{route('web.how_can_we_help')}}"
-                                                    class="hover:text-secondary-500
-                                                    {{-- {{ Route::is('web.how-it-works') ? 'text-secondary-500' : '' }} --}}
-                                                    ">Home Consultation</span></a>
-                                                </div>
-
-                                            </li>
-                                            <li class="py-4">
-                                                <div class="grid grid-row">
-                                                    <a href="{{route('web.service-detail', ['id' => 8])}}"
-                                                    class="hover:text-secondary-500 {{ Route::is('about.blog') ? 'text-secondary-500' : '' }}">Medication Dispensing & Delivery</a>
-                                                </div>
-
-                                            </li>
-                                            <li class="py-4">
-                                                <div class="grid grid-row">
-                                                    <a href="{{route('web.service-detail', ['id' => 9])}}"
-                                                    class="hover:text-secondary-500 {{ Route::is('about.blog') ? 'text-secondary-500' : '' }}">Medication Monitoring & Adherence</a>
-                                                </div>
-
-                                            </li>
-                                            <li class="py-4">
-                                                <div class="grid grid-row">
-                                                    <a href="{{route('web.service-detail', ['id' => 10])}}"
-                                                class="hover:text-secondary-500 {{ Route::is('about.blog') ? 'text-secondary-500' : '' }}">Health Education Workshop</a>
-                                                </div>
-
-                                            </li>
-                                            <li class="py-4">
-                                                <div class="grid grid-row">
-                                                    <a href="{{route('web.service-detail', ['id' => 11])}}"
-                                                class="hover:text-secondary-500 {{ Route::is('about.blog') ? 'text-secondary-500' : '' }}">Rewards Program Referreals</a>
-                                                </div>
-
-                                            </li>
-                                            <li class="py-4">
-                                                <div class="grid grid-row">
-                                                    <a href="{{route('web.service-detail', ['id' => 12])}}"
-                                                class="hover:text-secondary-500 {{ Route::is('about.blog') ? 'text-secondary-500' : '' }}">Drug information request </a>
-                                                </div>
-
-                                            </li>
-                                        </ul>
-                                    </x-slot>
-                                </x-dropdown>
-                            </li>
                             <li class=" border-b-4 border-transparent   ">
                                 <a href="{{ route('web.how_it_works') }}"
                                     class="flex h-full items-center  py-5 hover:text-secondary-500  px-4 {{ Route::is('faqs') ? 'text-secondary-500' : '' }}">
@@ -195,8 +128,8 @@
                                 </div>
                             </li>
                             <li class=" border-b-4 border-transparent ">
-                                <x-button.primary href="{{ route('web.how_can_we_help') }}" class="ml-4 justify-between items-center">
-                                    Book Appointment <i class="fa fa-chevron-right"></i>
+                                <x-button.primary href="{{ route('user.login') }}" class="ml-4 justify-between items-center">
+                                    Start Selling <i class="fa fa-chevron-right"></i>
                                 </x-button.primary>
                             </li>
 

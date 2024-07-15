@@ -33,7 +33,7 @@
                     <tr wire:key="{{ $k }}">
                         <td>{{ $loop->index + 1 }}</td>
                         <td><a href="{{ route('admin.product.detail', $product) }}"
-                                class="text-primary">{{ $product->name }}</a></td>
+                                class="">{{ $product->name }}</a></td>
                         <td>{{ $product->price }}</td>
                         <td>{{ $product->created_at }}</td>
                         <td>

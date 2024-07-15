@@ -37,6 +37,30 @@ Route::group(['prefix' => 'admin',], function () {
 
     });
 });
+Route::group(['prefix' => 'user',], function () {
+    Route::get('/login', [\App\Http\Controllers\User\Auth\LoginController::class, 'showLoginForm'])->name('user.login');
+    Route::post('/login', [\App\Http\Controllers\User\Auth\LoginController::class, 'login'])->name('user.login');
+    Route::get('/register', [\App\Http\Controllers\User\Auth\RegisterController::class, 'showRegistrationForm'])->name('user.register');
+    Route::post('/register', [\App\Http\Controllers\User\Auth\RegisterController::class, 'register'])->name('user.register');
+    Route::get('/logout', [\App\Http\Controllers\User\Auth\LoginController::class, "logout"])->name('user.logout');
+
+
+    Route::group(['middleware' => ['auth'], 'as' => 'user.'], function () {
+        Route::get('/', [\App\Http\Livewire\User\Dashboard::class, '__invoke'])->name('dashboard');
+        Route::get('/change_password', [\App\Http\Livewire\User\ChangePassword::class, "__invoke"])->name('change');
+        Route::get('/profile_update', [\App\Http\Livewire\User\UpdateProfile::class, "__invoke"])->name('update');
+        Route::get('/appointments', [\App\Http\Livewire\User\Appointment\Index::class, '__invoke'])->name('appointments');
+        Route::get('/products', [\App\Http\Livewire\User\Products\Index::class, '__invoke'])->name('products');
+        Route::get('/product/{product}', [\App\Http\Livewire\User\Products\Detail::class, '__invoke'])->name('product.detail');
+        Route::get('/blogs', [\App\Http\Livewire\Admin\Blog\Index::class, '__invoke'])->name('blogs');
+        Route::get('/blog/{blog}', [\App\Http\Livewire\Admin\Blog\Detail::class, '__invoke'])->name('blog.detail');
+        Route::get('/faq', [\App\Http\Livewire\Admin\Faq\Index::class, '__invoke'])->name('faqs');
+        Route::get('/team', [\App\Http\Livewire\Admin\Teams\Index::class, '__invoke'])->name('team');
+        Route::get('/testimonial', [\App\Http\Livewire\Admin\Testimonial\Index::class, '__invoke'])->name('testimonial');
+        Route::get('/service', [\App\Http\Livewire\Admin\Services\Index::class, '__invoke'])->name('service');
+
+    });
+});
 
 Route::get('/', [\App\Http\Livewire\Web\Home::class, '__invoke'])->name('web.home');
 Route::get('/how_can_we_help', [\App\Http\Livewire\Web\HowCanWeHelp\Index::class, '__invoke'])->name('web.how_can_we_help');
